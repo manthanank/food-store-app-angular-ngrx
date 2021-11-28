@@ -12,7 +12,7 @@ import { AuthService, AuthResponseData } from './auth.service';
 export class AuthComponent {
   isLoginMode = true;
   isLoading = false;
-  error = null;
+  error: string = null;
 
   constructor(private authService: AuthService, private router: Router) {}
 
