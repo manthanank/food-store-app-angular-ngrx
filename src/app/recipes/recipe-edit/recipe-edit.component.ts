@@ -14,6 +14,9 @@ export class RecipeEditComponent implements OnInit {
   editMode = false;
   recipeForm: FormGroup;
 
+  get ingredientsControls() {
+    return (this.recipeForm.get('ingredients') as FormArray).controls;
+  }
   constructor(private route: ActivatedRoute,
               private recipeService: RecipeService,
               private router: Router) {
@@ -63,9 +66,7 @@ export class RecipeEditComponent implements OnInit {
   onCancel() {
     this.router.navigate(['../'], {relativeTo: this.route});
   }
-  get controls() { // a getter!
-    return (<FormArray>this.recipeForm.get('ingredients')).controls;
-  }
+
   private initForm() {
     let recipeName = '';
     let recipeImagePath = '';
