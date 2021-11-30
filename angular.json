@@ -26,10 +26,8 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-            ],
-            "scripts": [
-            ]
+            "styles": [],
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -98,9 +96,21 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "project-app"
+  "defaultProject": "project-app",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
