@@ -19,7 +19,7 @@ import { RecipeEffects } from './recipes/store/recipe.effects';
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
     AppRoutingModule,
     StoreModule.forRoot(fromApp.appReducer),
@@ -32,4 +32,4 @@ import { RecipeEffects } from './recipes/store/recipe.effects';
   bootstrap: [AppComponent]
   // providers: [LoggingService]
 })
-export class AppModule { }
+export class AppModule {}
