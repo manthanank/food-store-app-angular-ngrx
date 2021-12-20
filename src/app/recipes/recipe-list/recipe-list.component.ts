@@ -20,7 +20,7 @@ export class RecipeListComponent implements OnInit, OnDestroy {
     private router: Router,
     private route: ActivatedRoute,
     private store: Store<fromApp.AppState>
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.subscription = this.store

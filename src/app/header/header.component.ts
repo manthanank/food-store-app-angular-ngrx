@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   constructor(
     private store: Store<fromApp.AppState>
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.userSub = this.store
