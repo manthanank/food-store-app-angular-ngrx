@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/project-app",
+    "public": "dist/food-store-app-angular-ngrx",
     "ignore": [
       "firebase.json",
       "**/.*",
