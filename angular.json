@@ -97,8 +97,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "food-store-app-angular-ngrx:build:production",
+            "firebaseProject": "food-store-app-angular-ngrx",
+            "firebaseHostingSite": "food-store-app-angular-ngrx"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "059774d3-45b9-4c69-ba17-7e41d5434790"
   }
 }
